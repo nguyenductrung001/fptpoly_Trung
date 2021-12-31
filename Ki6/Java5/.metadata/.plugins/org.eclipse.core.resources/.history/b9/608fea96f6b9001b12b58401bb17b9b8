@@ -1,0 +1,55 @@
+package com.example.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.demo.model.Student;
+import com.example.demo.utils.CommonConst;
+
+public class StudentService {
+	private static final List<Student> _students = new ArrayList<Student>();
+	private static final Student Trung = null;
+	private static final Student Manh = null;
+	static {
+		_students.add(01, Trung);
+		_students.add(01, Manh);
+	}
+
+	public static List<Student> getAll() {
+		return _students;
+	}
+
+	public static Student getByMasv(Integer masv) {
+		for (Student student : _students) {
+			if (student.getMa() == masv) {
+				return student;
+			}
+		}
+		return null;
+	}
+
+	public static int add(Student student) {
+		try {
+			_students.add(student);
+			return CommonConst.SUCCESS;
+
+		} catch (Exception E) {
+			return CommonConst.ERROR;
+		}
+
+	}
+	public static int updateByMasv(Student student) {
+		try {
+			for(int i=0;i<_students.size();i++) {
+				if(student.get(i). getMasv() == student.getMasv()) {
+					_students.set(i, student);
+				}
+				return CommonConst.SUCCESS;
+			}
+			return CommonConst.SUCCESS;
+		} catch (Exception e) {
+			return CommonConst.ERROR;
+		}
+	}
+
+}

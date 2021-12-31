@@ -1,0 +1,114 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.Container {
+    margin: 0 auto;
+    padding: 5px;
+    width: 540px;
+    height: 620px;
+    padding: 20px 20px 36px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(3, 3, 4, 0.1), 0 0 1px 0 rgba(239, 242, 247, 0.5);
+    background-color: #fff;
+
+}
+
+.Sign-In {
+    width: 99px;
+    height: 37px;
+    margin: 0 170px 50px 201px;
+    font-family: Muli;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #000a12;
+}
+
+.Type {
+    width: 43px;
+    height: 20px;
+    padding: 6px 22px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: 0.08px;
+    color: #b8c1cb;
+}
+
+.Normal {
+    width: 500px;
+    height: 30px;
+    margin: 20px 0 0;
+    padding: 6px 14px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21), inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+    border: solid 1px #d3dce6;
+    background-color: #fff;
+}
+
+.Fill {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #13cb65;
+}
+
+.Forgot-your-password {
+    width: 500px;
+    height: 24px;
+    margin: 30px 0 0;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.09px;
+    text-align: center;
+    color: #778f9b;
+}
+
+.button-login {
+    width: 500px;
+    height: 60px;
+    margin: 95px 0 20px;
+    padding: 20px 0;
+    background-color: rgba(29, 12, 182, 0.514);
+    border-radius: 30px;
+}
+
+.button-login-facebook {
+    width: 500px;
+    height: 60px;
+    margin: 95px 0 20px;
+    padding: 20px 0;
+    background-color: rgba(66, 81, 218, 0.514);
+    border-radius: 30px;
+}
+
+.type1 {
+    width: 50px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}

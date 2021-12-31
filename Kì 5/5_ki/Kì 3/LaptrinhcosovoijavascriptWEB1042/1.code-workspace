@@ -1,0 +1,26 @@
+{
+    "folders": [
+		{
+			"name": "Asignment",
+			"path": "C:\\Users\\Ma\\Desktop\\Asignment"
+		},
+		{
+			"name": "Trenlop",
+			"path": "E:\\HocTap\\Ky2\\Laptrinhjava1MOB1014\\Trenlop"
+		},
+		{
+			"name": "LaptrinhcosovoijavascriptWEB1042",
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Asignment",
+        "files.exclude": {
+            "**/.classpath": true,
+            "**/.project": true,
+            "**/.settings": true,
+            "**/.factorypath": true
+        },
+        "maven.view": "flat"
+    }
+}

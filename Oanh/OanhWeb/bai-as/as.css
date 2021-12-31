@@ -1,0 +1,66 @@
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+header{
+    background-image: url('3.jpg');
+    background-size: 100% 100%;
+    padding-bottom: 25%;
+}
+nav{
+    font-variant: small-caps;
+    text-align: center;
+    background-color :pink;
+    color: white;
+    line-height: 40px ;
+   
+}
+nav>a:hover{
+    color: red;
+}
+aside{
+    width: 75%;
+    height: 1000px;
+    background-color:floralwhite;
+    float: left;
+}
+article{
+    width: 25%;
+    height: 1000px;
+    background-color: wheat;
+    float: right;
+    
+}
+footer{
+    height: 50px;
+    border-top: 5px double lightpink;
+    text-align: center;
+    background-color:lightpink;
+     clear: both;
+
+}
+article>ul>li>a {
+    font-variant: small-caps;
+    font-size: 20px;
+}
+iframe[ name="page"]{
+    width: 75%;
+    min-height: 400px;
+}
+    nav>input{
+        float: right;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    nav>button{
+        
+        margin-top: 10px;
+        margin-right: 25px;
+    }
+  aside>ul>li>a{
+      list-style: none;
+      text-decoration: none;
+      display: block;
+      font-variant: small-caps;
+      color: orangered;
+  }  

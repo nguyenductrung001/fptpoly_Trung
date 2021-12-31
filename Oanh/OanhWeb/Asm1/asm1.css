@@ -1,0 +1,108 @@
+.containner{
+    width: 980px;
+    margin: 0 auto;
+}
+
+header{
+    width: 980px;
+    height: 300px;
+}
+nav{
+    width: 980px;
+    line-height: 40px;
+    background-color: #f16721;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a{
+    color: white;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+aside{
+    width: 300px;
+    height: 962px;
+    border: 1px solid gray;
+    float: left;
+}
+article{
+    width: 668px;
+    height: 962px;
+    border: 1px solid gray;
+    float: left;
+    margin-left: 5px;
+}
+aside h2{
+    color: #507f28;
+    font-variant: small-caps;
+    padding-left: 20px;
+    border-bottom: 1px solid #507f28;
+}
+aside a{
+    color: red;
+    text-decoration: none;
+}
+aside li{
+    margin: 10px 0;
+}
+aside a:hover{
+    color: #507f28;
+}
+article h2{
+    color: #507f28;
+    font-variant: small-caps;
+    padding-left: 20px;
+    border-bottom: 1px solid #507f28;
+}
+.sanpham{
+    width: 207px;
+    height: 313px;
+    border: 1px solid gray;
+    text-align: center;
+    margin: 5px;
+    float: left;
+}
+.sanpham img{
+    margin-top: 20px;
+}
+.sanpham p{
+    color:  #507f28;
+    font-variant: small-caps;
+}
+.sanpham span{
+    color: red;
+    font-size: 25px;
+}
+.sanpham button{
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.ndtin1 img, .ndtin2 img{
+    margin: 0 20px;
+    float: left;
+    margin-bottom: 20px;
+}
+.link{
+    clear: both;
+}
+h3{
+    color:  #507f28;
+    font-variant: small-caps; 
+    margin: 0px;
+}
+.ndtin2{
+    clear: both;
+   
+}
+.td-tin{
+    width: 390px;
+    float: left;
+}

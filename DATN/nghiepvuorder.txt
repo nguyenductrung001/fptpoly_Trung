@@ -1,0 +1,69 @@
+đặt hàng không thanh toán online: chưa thanh toán, chờ xác nhận
+đặt hàng thanh toán online, thanh toán thành công: đã thanh toán, chờ xác nhận
+đặt hàng thanh toán online, thanh toán không thành công: thanh toán thất bại, chờ xác nhận
+
+tương tác với form xác nhận đơn hàng: 
+
+(select) chưa thanh toán, gọi điện xác nhận, nghe máy: chưa thanh toán, đã xác nhận
+
+	chưa thanh toán, gọi điện xác nhận, không nghe máy lần 1: chưa thanh toán, không nghe máy lần 1.
+	chưa thanh toán, gọi điện xác nhận, không nghe máy lần 2: chưa thanh toán, không nghe máy lần 2.
+
+	chưa thanh toán, gọi điện xác nhận, không nghe máy lần 3: chưa thanh toán, không nghe máy lần 3. 
+
+	+ đã hủy (update không nghe máy lần 3 rồi update luôn thành: đã hủy)
+
+(select) đã thanh toán, gọi điện xác nhận, nghe máy: đã thanh toán, đã xác nhận
+
+	đã thanh toán, gọi điện xác nhận, không nghe máy lần 1: đã thanh toán, không nghe máy lần 1.
+	đã thanh toán, gọi điện xác nhận, không nghe máy lần 2: đã thanh toán, không nghe máy lần 2.
+
+	đã thanh toán, gọi điện xác nhận, không nghe máy lần 3: đã thanh toán, không nghe máy lần 3. 
+
+	+đã thanh toán, khách không trả lời lần 3, chờ khách hàng phản hồi (update không nghe máy lần 3 rồi update luôn thành: đã thanh toán, khách không trả lời lần 3, chờ khách hàng phản hồi )			  		
+	
+	(đã thanh toán, khách không trả lời, chờ khách hàng phản hồi) -> khách phản hồi	
+	 đã thanh toán, khách gọi điện xác nhận, nghe máy: đã thanh toán, đã xác nhận			
+
+tương tác với form xác nhận giao hàng: 
+
+(select)
+ 	(chưa thanh toàn, đã xác nhận)
+	(giao hàng thành công)
+	 chưa thanh toán, shiper giao hàng thành công nhận tiền thu hộ thành công, gọi điện xác nhận, nghe máy xác nhận: đã thanh toán trực tiếp với đơn vị vận chuyển, giao hàng thành công
+
+	(giao hàng thất bại , gọi đéo nghe)
+	chưa thanh toán,shiper giao hàng thất bại, gọi điện xác nhận, không nghe máy lần 1: chưa thanh toán, khách hàng không nhận hàng, không trả lời lần 1.
+	chưa thanh toán,shiper giao hàng thất bại, gọi điện xác nhận, không nghe máy lần 2: chưa thanh toán, khách hàng không nhận hàng, không trả lời. -> đã hủy(như trên)
+
+
+	(shiper giao hàng thất bại, gọi điện có nghe)
+	chưa thanh toán,shiper giao hàng thất bại, gọi điện xác nhận, không nghe máy lần 1, 2: đã cọc tiền ship, thực hiện lại quy trình.
+
+
+	(thực hiện giao hàng lại)	
+	chưa thanh toán,shiper giao hàng thất bại, gọi điện xác nhận, thông báo hủy
+				chưa thanh toán, khách hàng không nhận hàng
+				+ đã hủy (update không nhận hàng luôn rồi update luôn thành: đã hủy)
+
+
+
+(select) đã thanh toán, gọi điện xác nhận, nghe máy: đã thanh toán, đã xác nhận
+
+	(đã thanh toàn, đã xác nhận)
+	(giao hàng thành công)
+	 đã thanh toán, shiper giao hàng  thành công, gọi điện xác nhận, nghe máy xác nhận: đã thanh toán online, giao hàng thành công
+
+	(giao hàng thất bại , gọi đéo nghe)
+	đã thanh toán,shiper giao hàng thất bại, gọi điện xác nhận, không nghe máy lần 1: đã thanh toán online, khách hàng không nhận hàng, không trả lời lần 1.
+	đã thanh toán,shiper giao hàng thất bại, gọi điện xác nhận, không nghe máy lần 2: đã thanh toán online, khách hàng không nhận hàng, không trả lời lần 2. -> đã thanh toán, khách không trả lời lần 2, chờ khách hàng phản hồi(như trên)
+
+
+	(đã thanh toán, khách không nhận hàng, chờ khách hàng phản hồi) -> khách phản hồi	
+	(thực hiện giao hàng lại)	
+	đã thanh toán,shiper giao hàng thất bại, gọi điện xác nhận -> xác nhận lịch hẹn, thỏa thuận chi phí
+						đã thanh toán, khách hàng xác nhận với chi phí nếu sảy ra hoàn tiền, thực hiện lại quy trình.
+	
+		đã thanh toán,shiper giao hàng thất bại, gọi điện xác nhận -> không phản hồi -> giữ tiền, chưa xác nhận hoàn tiền, chờ phản hồi
+						
+

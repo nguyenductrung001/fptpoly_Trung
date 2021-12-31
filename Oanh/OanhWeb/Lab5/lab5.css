@@ -1,0 +1,15 @@
+/* gọi đến thẻ img trong thẻ p */
+p>img{
+    width : 20%;
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 0 0 5px green;
+}
+p>img :hover{
+    box-shadow: 2px 4px 6px red;
+    background : aqua;
+
+}

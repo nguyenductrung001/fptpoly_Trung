@@ -1,0 +1,32 @@
+.cotainer{
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color:orange;
+    box-shadow: 5px 5px 10px orange;
+    }
+    .form-group{
+        margin: 10px 2px;
+        font-weight: bold;
+    }
+    .form-control{
+        margin: 10px 2px;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        width: 450px;
+        box-shadow: 0 0 4px blue;
+        color: orange;
+        display: block;
+        outline: none;
+    }
+    .btn{
+        margin: 0 10px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        box-shadow: inset 0 0 10px blue;
+        font-weight: bold;
+        color: black;
+        outline: none;
+        border: none;
+    }

@@ -1,0 +1,104 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background-color: white;
+    background-size: 100% 100%;
+    text-align: center;
+}
+nav{
+    line-height: 50px;
+    background-color: rgb(2, 117, 46);
+    font-variant: small-caps;
+    font-size: 20px;
+    text-align: center;
+}
+nav>a{
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+nav>input{
+    float: right;
+    margin-top: 10px ;
+    margin-right: 20px;
+}nav>button{
+    margin-top: 10px ;
+    margin-right: 20px;
+}
+article{
+    width: 100%;
+    height:500px ;
+    background-color: white;
+}
+.anh1{
+    float: left;
+}
+
+.thongtin{
+    border: 1px double gray;
+    float: left;
+    width: 290px;
+    margin-left: 25px;
+    padding: 2px;
+}
+.thongtin>li{
+    padding: 5px;
+}
+.anh2{
+    float: right;
+    padding-right: 15px;
+    padding: 2px;
+}
+.sp{
+    clear: both;
+    width: 100%;
+    margin: 100px;
+}
+.sp img{
+    float: left;
+}
+.sp .tin{
+    float: left;
+    margin: 15px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+h5{
+    color: #1b6109;
+}
+span{
+    color: #edba07;
+}
+.anhduoi{
+    clear:both;
+    border:1px solid orangered;
+    height:200px;
+}
+.anhduoi .sp1{
+    border:1px solid white;
+    width:200px;
+    padding:15px;
+    float:left;
+    padding-left:20px;
+}
+.anhduoi .sp1 img{
+    padding-left:40px;
+    padding-top:10px;
+}
+.anhduoi .sp1 p{
+    padding-left:10px;
+    color:#1b6109;
+}
+.anhduoi .sp1 span{
+    padding-left:50px;
+    color:#edba07;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(2, 117, 46) ;
+    text-align: center;
+    clear: both;
+}

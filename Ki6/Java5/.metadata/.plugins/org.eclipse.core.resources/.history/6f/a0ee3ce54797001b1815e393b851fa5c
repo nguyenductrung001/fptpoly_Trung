@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+        <nav>
+            <button style="float: right;">Tìm Kiếm</button>
+            <input type="text" class="input-medium search-query" name="s" placeholder="Sản phẩm cần tìm ?" value="">
+
+            <!-- <input type="search" id="search" placeholder="Search..." /> -->
+           
+            <a href="home.html" target="page">Trang chủ</a> |
+            <a href="GioiThieu.html" target="page">Giới thiệu</a> |
+            <a href="#" target="page">Liên hệ</a> |
+            <a href="#" target="page">Góp ý</a> |
+            <a href="#" target="page">Hỏi đáp</a>
+        </nav>
+
+                  
+
+
+</body>
+</html>

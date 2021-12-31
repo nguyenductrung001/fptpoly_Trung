@@ -1,0 +1,69 @@
+package com.example.demo.service;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+
+import com.example.demo.model.Book;
+import com.example.demo.utils.CommonConst;
+
+public class BookService {
+	private static final List<Book> _books = new ArrayList<Book>();
+
+	public List<Book> get() {
+		return  _books;
+	}
+
+	public static Book getById(Integer id) {
+		for (Book book : _books) {
+			if(book.getId()==id) {
+				return book;
+			}
+		}
+		return null;
+	}
+
+	public static int add(Book book) {
+		try {
+			_books.add(book);
+			return CommonConst.SUCCESS;
+		} catch (Exception e) {
+			return CommonConst.ERROR;
+		}
+		
+	}
+
+	public static int update(Book book) {
+		try {
+			for(int i =0;i<_books.size();i++) {
+				 if(book.get(i).getId()== book.getId()) {
+					 
+				 }
+			}
+			return CommonConst.SUCCESS;
+		} catch (Exception e) {
+			return CommonConst.ERROR;
+		}
+	}
+
+	public static int delete(Integer deleteId) {
+		try {
+			for (Book book : _books) {
+				if(book.getId()==deleteId) {
+					_books.remove(book);
+					return CommonConst.SUCCESS;
+				}
+			}
+			return CommonConst.FAIL;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return CommonConst.ERROR;
+		}
+		
+	}
+}

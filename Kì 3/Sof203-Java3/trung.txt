@@ -1,0 +1,4 @@
+com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+
+jdbc:sqlserver://localhost:1433;databaseName=SOF203

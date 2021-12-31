@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+        #calc {
+            width: 192px;
+            height: 270px;
+            border: solid 1px black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        span {
+            font-size: 25px;
+            line-height: 40px;
+        }
+        
+        button {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            margin: 2px 2px 2px 2px;
+        }
+        
+        textarea {
+            width: 182px;
+            height: 40px;
+            line-height: 40px;
+            resize: none;
+            margin: 2px 2px 2px 2px;
+            padding: 0;
+            text-align: right;
+        }
+    </style>
+    <script>
+        var a = 0;
+        var b = 0;
+        var operator;
+        var isShowValue = false;
+        var monitoText = "";
+        var isNumClick = false;
+
+        function monitorClear() {
+            a = 0;
+            b = 0;
+            operator = null;
+            monitoText = "";
+            isNumClick = false;
+            document.getElementById('monitor').innerHTML = "";
+        }
+
+        function numClick(num) {
+            if (isShowValue) {
+                monitorClear();
+                isShowValue = false
+            }
+            isNumClick = true;
+            if (operator == null) {
+                a = 10 * a + num;
+            } else {
+                b = 10 * b + num;
+            }
+            monitoText = `${monitoText}${num}`
+            document.getElementById('monitor').innerHTML = monitoText;
+
+        }
+
+        function operatorClick(inOperator) {
+            if (operator == null | isNumClick) {
+                isNumClick = false;
+                operator = inOperator;
+                monitoText = `${monitoText}${operator}`;
+                document.getElementById('monitor').innerHTML = monitoText;
+            } else if (operator != null & !isNumClick) {
+                operator = inOperator;
+                monitoText = `${monitoText.substr(0,monitoText.length-1)}${operator}`;
+                document.getElementById('monitor').innerHTML = monitoText;
+            } else {
+                document.getElementById('monitor').innerHTML = "One calculation at once ";
+            }
+        }
+
+        function getValue(num1, num2, operator) {
+            switch (operator) {
+                case "+":
+                    return num1 + num2;
+                    break;
+                case "-":
+                    return num1 - num2;
+                    break;
+                case "*":
+                    return num1 * num2;
+                    break;
+                default:
+                    return num1 / num2;
+            }
+        }
+
+        function showValue() {
+            if (operator == null & isNumClick) {
+
+            } else if (isNumClick) {
+                document.getElementById('monitor').innerHTML = getValue(a, b, operator);
+
+            } else {
+                document.getElementById('monitor').innerHTML = "Syntax error"
+            }
+            isShowValue = true;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="calc">
+        <span>CACULATOR</span>
+        <!-- cols="30" rows="10" -->
+        <textarea name="monitor" id="monitor"></textarea><br/>
+        <!-- <input type="text" name="monitor" id="monitor" "/> -->
+        <button name="num_7 " id="num_7 " onclick="numClick(7)">7</button>
+        <button name="num_8 " id="num_8 " onclick="numClick(8)">8</button>
+        <button name="num_9 " id="num_9 " onclick="numClick(9)">9</button>
+        <button name="plus " id="plus " onclick="operatorClick('+')">+</button><br/>
+        <button name="num_4 " id="num_4 " onclick="numClick(4)">4</button>
+        <button name="num_5 " id="num_5 " onclick="numClick(5)">5</button>
+        <button name="num_6 " id="num_6 " onclick="numClick(6)">6</button>
+        <button name="minus " id="minus " onclick="operatorClick('-')">-</button><br/>
+        <button name="num_1 " id="num_1 " onclick="numClick(1)">1</button>
+        <button name="num_2 " id="num_2 " onclick="numClick(2)">2</button>
+        <button name="num_3 " id="num_3 " onclick="numClick(3)">3</button>
+        <button name="multi " id="multi " onclick="operatorClick('*')">*</button><br/>
+        <button name="num_0 " id="num_0 " onclick="numClick(0)">0</button>
+        <button name="num_C " id="num_C " onclick="monitorClear()">C</button>
+        <button name="equal " id="equal " onclick="showValue()">=</button>
+        <button name="divide " id="divide " onclick="operatorClick(':')">:</button>
+    </div>
+    <div id="app ">
+    </div>
+    <script src="src/index.js "></script>
+</body>
+
+</html>

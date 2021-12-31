@@ -1,0 +1,130 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.container > header {
+  background-image: url("banner.jpg");
+  background-size: 100% 100%;
+  padding-bottom: 25%;
+}
+.container > nav {
+  line-height: 40px;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+margin: 5px;
+  font-variant: small-caps;
+}
+.right {
+  min-height: 500px;
+
+  width: 898px;
+
+  background-color: rgba(240, 220, 223, 0.883);
+  float: right;
+}
+.left {
+  background-color: rgb(231, 191, 198);
+  min-height: 500px;
+
+  width: 298px;
+  float: left;
+}
+
+footer {
+  border-top: 5px double orangered;
+
+  line-height: 50px;
+
+  background-color: lightcyan;
+
+  text-align: center;
+
+  font-variant: small-caps;
+
+  clear: both;
+}
+
+.container > nav > a {
+  color: white;
+  text-decoration: none;
+  margin:  10px;
+  list-style: none;
+}
+nav > a:hover {
+  background: orange;
+  color: red;
+  text-decoration: underline;
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s;
+}
+iframe[name="page"] {
+  width: 100%;
+  min-height: 500px;
+}
+nav > input {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+nav > button {
+  margin-top: 10px;
+  margin-right: 25px;
+}
+.vmenu {
+  padding: 0px;
+  margin: 5px;
+  /* list-style: none; */
+  border-radius: 3px;
+  box-shadow: 0 0 2px gray;
+}
+.vmenu a {
+  background: url("bullet_hover.gif") no-repeat 10px center;
+  /* display: block; */
+  border-bottom: 1px dotted orangered;
+  color: orangered;
+  font-variant: small-caps;
+  font-size: large;
+  /* text-decoration: none; */
+  padding: 8px 5px 8px 30px;
+}
+.vmenu a:hover {
+  background: url("bullet_hover.gif") no-repeat 10px center;
+  border-bottom: 1px dotted white;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s;
+}
+ul.submenu {
+  width: 200px;
+  min-height: 100px;
+  list-style: none;
+  display: none;
+}
+ul.vmenu:hover ul.submenu {
+  display: block;
+}
+ul.vmenu > ul > li {
+  background-color: orangered;
+}
+
+ul.submenu1 {
+  width: 200px;
+  min-height: 100px;
+  list-style: none;
+  display: none;
+}
+ul.vmenu:hover ul.submenu1 {
+  display: block;
+}
+ul.vmenu > ul > li {
+  background-color: orangered;
+}

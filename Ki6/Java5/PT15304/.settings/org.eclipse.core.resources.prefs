@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//WebContent/views/admin/users/danhsach.jsp=UTF-8
+encoding//WebContent/views/admin/users/menu.jsp=UTF-8
+encoding//src/PT15304_B1/HomeServlet.java=UTF-8
+encoding//src/com/entity/Favorite.java=UTF-8
+encoding//src/com/servlet/admin/DeleteServlet.java=UTF-8
+encoding//src/com/servlet/auth/RegisterServlet.java=UTF-8

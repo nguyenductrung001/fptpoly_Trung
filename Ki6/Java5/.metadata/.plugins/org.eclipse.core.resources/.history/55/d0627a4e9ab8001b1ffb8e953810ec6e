@@ -1,0 +1,12 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/book")
+public class BookRestController {
+public List<Book> get(){
+	return null;
+}
+}

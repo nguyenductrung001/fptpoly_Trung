@@ -1,0 +1,30 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import lombok.Getter;
+
+@RestController
+
+public class StudentController {
+	@GetMapping("/gppd")
+	public String getString() {
+		return "get Trung-PH10309";
+	}
+@PostMapping("/gppd")
+	public String addString() {
+		return "add Trung-PH10309";
+	}
+@PutMapping("/gppd")
+	public String updateString() {
+		return "update Trung-PH10309";
+	}
+	@DeleteMapping("/gppd")
+	public String deleteString() {
+		return "delete Trung-PH10309";
+	}
+}

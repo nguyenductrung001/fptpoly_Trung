@@ -1,0 +1,38 @@
+
+th{
+    border: 1px double black;
+    border-collapse: collapse; 
+    background-color:yellow;
+    color: white;
+  
+}
+table tr td {
+    text-align: center;
+    border: 1px dotted black;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    max-width: 1360px;
+}
+.Id{
+  background-color: aqua;  
+}
+.name{
+    background-color: aqua;
+}.price{
+    background-color : aqua;
+}
+.mot{
+    background-color: aqua;
+}
+.Secondary{
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: underline black;
+    background-color: aqua;
+
+}
+.Secondary:hover{
+    color: black;
+}

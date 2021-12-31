@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="Oder.css"> -->
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 1000px;
+    display: block;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: #c7c7c7; */
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.header>span {
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    text-shadow: 1px 0 blue, -1px 0 blue, 0 1px blue, 0 -1px blue;
+}
+
+.header>.logo {
+    padding-left: 90px;
+    height: 150px;
+}
+
+.nav {
+    width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+    background-color: #d81010;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    width: 100%;
+    min-height: 800px;
+}
+
+.footer>.cer {
+    border-top: orangered double 1px;
+    background-color: #a0522d;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 5px 0 5px 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    font-variant: small-caps;
+    padding-left: 50px;
+}
+
+.menu>li {
+    display: inline-block;
+    /* padding: 0 50px 0 0; */
+    /* margin-left: 20px; */
+    text-align: center;
+    width: 125px;
+}
+
+.menu>li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu>li a:hover {
+    color: #ff4500;
+}
+
+li:hover {
+    background-color: #ffa500;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 125px;
+}
+
+li:hover>.sub-menu {
+    display: table-row;
+    background-color: #ca610b;
+}
+
+.sub-menu>li {
+    text-align: center;
+    /* padding-left: 10px; */
+}
+
+.fb-coments {
+    background-color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <fieldset class="groupbox">
+            <legend>
+                <div class="legend">
+                    Bán chạy
+                </div>
+            </legend>
+            <div class="boxitem">
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item1"><img src="images/1.jpg" alt="BALEN ĐẾ KHÍ XANH"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item1">BALEN ĐẾ KHÍ XANH</a>
+                    </div>
+                    <div class="price">
+                        1.200.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item2"><img src="images/2.jpg" alt="Balenciaga TRACK (hàng rep11)"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item2">Balenciaga TRACK (hàng rep11)</a>
+                    </div>
+                    <div class="price">
+                        1.000.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item3"><img src="images/3.jpg" alt="Balenciaga TRIP S(hàng rep11)"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item3">Balenciaga TRIP S(hàng rep11)</a>
+                    </div>
+                    <div class="price">
+                        1.000.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item4"><img src="images/4.jpg" alt="CONVERSE (rep11)"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item4">CONVERSE (rep11)</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item5"><img src="images/5.jpg" alt="CONVERSE XANH (rep11)"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item5">CONVERSE XANH (rep11)</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item6"><img src="images/6.jpg" alt="DIOR"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item6">DIOR</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item7"><img src="images/7.jpg" alt="JORDAN 1"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item7">JORDAN 1</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item8"><img src="images/8.jpg" alt="MC HOA CÚC"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item8">MC HOA CÚC</a>
+                    </div>
+                    <div class="price">
+                        400.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item9"><img src="images/9.jpg" alt="MC QUEEN PHẢN QUANG"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item9">MC QUEEN PHẢN QUANG</a>
+                    </div>
+                    <div class="price">
+                        400.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item10"><img src="images/10.jpg" alt="MC QUEEN VÀNG"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item10">MC QUEEN VÀNG</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+    
+            </div>
+            <a href="banchay.html">Xem thêm >></a>
+        </fieldset>
+        <fieldset class="groupbox">
+            <legend>
+                <div class="legend">
+                    Giày mới
+                </div>
+            </legend>
+            <div class="boxitem">
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item22"><img src="images/giay (22).jpg" alt="YZ350 (full màu)"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item22">YZ350 (full màu)</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item21"><img src="images/giay (21).jpg" alt="YZ350 CUSTOM"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item21">YZ350 CUSTOM</a>
+                    </div>
+                    <div class="price">
+                        1.000.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item20"><img src="images/giay (20).jpg" alt="UNTRAL BOOST"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item20">UNTRAL BOOST</a>
+                    </div>
+                    <div class="price">
+                        460.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item19"><img src="images/giay (19).jpg" alt="RO XÁM"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item19">RO XÁM</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item18"><img src="images/giay (18).jpg" alt="RO TRẮNG SỮA "></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item18">RO TRẮNG SỮA </a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item17"><img src="images/giay (17).jpg" alt="RO HOA CÚC"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item17">RO HOA CÚC</a>
+                    </div>
+                    <div class="price">
+                        400.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item16"><img src="images/giay (16).jpg" alt="RO HOA CÚC BẢN 2"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item16">RO HOA CÚC BẢN 2</a>
+                    </div>
+                    <div class="price">
+                        400.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item15"><img src="images/giay (15).jpg" alt="PUMA"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item15">PUMA</a>
+                    </div>
+                    <div class="price">
+                        470.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item14"><img src="images/giay (14).jpg" alt="PROPHERE"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item14">PROPHERE</a>
+                    </div>
+                    <div class="price">
+                        450.000 đ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <a href="details.html#item13"><img src="images/giay (13).jpg" alt="NIKE HOA CÚC"></a>
+                    </div>
+                    <div class="name">
+                        <a href="details.html#item13">NIKE HOA CÚC</a>
+                    </div>
+                    <div class="price">
+                        850.000 đ
+                    </div>
+                </div>
+    
+            </div>
+            <a href="moi.html">Xem thêm >></a>
+        </fieldset>
+    
+    </div>
+</body>
+</html>

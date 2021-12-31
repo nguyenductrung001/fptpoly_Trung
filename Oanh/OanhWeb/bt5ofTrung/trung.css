@@ -1,0 +1,62 @@
+body {
+    padding: 0px;
+    margin: 0px;
+  }
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.container>header{
+    background-image: url('images/logo.png');
+    /* background-size: 15% 15%; */
+    /* padding-bottom: 25%; */
+}
+.container>nav{
+    width: 100%;
+    line-height: 40px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+.container>article{
+    width: 100%;
+    height: 600px;
+    background-color: thistle;
+}
+footer{
+    line-height: 30px;
+    background-color: tomato;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}
+.anh1{
+    float: left;
+    padding-right: 60px;
+    padding: 5px;
+}
+.thongtin{
+    float: left;
+    width: 290px;
+    margin-left: 30px;
+}
+.anh2{
+    float: right;
+    padding-right: 15px;
+    padding: 2px;
+}
+.sp{
+    clear: both;
+    width: 100%;
+    margin: 100px;
+}
+.sp img{
+    float: left;
+}
+.sp .tin{
+    float: left;
+    margin: 15px;
+    margin-top: 20px;
+    margin-right: 5px;
+}

@@ -1,0 +1,16 @@
+
+.align{
+	margin: 0 15px;
+}
+.align p{
+	line-height: 24px;
+	word-spacing: 2px;
+	font-size: 17px;
+}
+.align h4{
+	margin-bottom: 5px;
+	font-size: 28px;
+	color: black;
+}
+
+

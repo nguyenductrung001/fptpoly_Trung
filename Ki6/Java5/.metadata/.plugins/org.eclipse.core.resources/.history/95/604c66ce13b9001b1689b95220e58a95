@@ -1,0 +1,36 @@
+package com.example.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+
+import com.example.demo.model.Book;
+import com.example.demo.utils.CommonConst;
+
+public class BookService {
+	private static final List<Book> books = new ArrayList<Book>();
+
+	public List<Book> get() {
+		return null;
+	}
+
+	public static Book getDetail(Integer id) {
+		return null;
+	}
+
+	public static int add(Book book) {
+		return CommonConst.SUCCESS;
+	}
+
+	public static int update(Book book) {
+		return CommonConst.SUCCESS;
+	}
+
+	public static int delete(Book book) {
+		return CommonConst.SUCCESS;
+	}
+}

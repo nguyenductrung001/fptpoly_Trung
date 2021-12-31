@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/**/
+
+.groupbox {
+    margin: 30px 0 30px 2%;
+    width: 95%;
+    border: 1px solid brown;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    font-size: 20px;
+    min-height: 800px;
+}
+
+.text {
+    width: 96%;
+    margin: 25px 2% 25px 2%;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 0 0 3px #a1a1a1;
+    min-height: 800px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    line-height: 90px;
+}
+
+.quest,
+.ans {
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.quest {
+    position: relative;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.ans {
+    padding: 10px 0 0 50px;
+	color:orange;
+}
+
+.quest>a {
+	color:blue;
+}

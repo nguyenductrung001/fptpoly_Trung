@@ -1,0 +1,5 @@
+package com.xample.demo.controller;
+
+public class StudentController {
+
+}

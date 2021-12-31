@@ -1,0 +1,44 @@
+package com.servlet.auth;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/register")
+public class RegisterServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public RegisterServlet() {
+        super();
+       
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		request.getRequestDispatcher("/views/auth/register.jsp").forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Hello");
+		doGet(request, response);
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		String gender = request.getParameter("gender");
+		String number = request.getParameter("number");
+		
+		System.out.println("name" +name);
+		System.out.println("email: "+ email);
+		System.out.println("password: "+password);
+		System.out.println("gender: "+gender);
+		System.out.println("number: "+number );
+	}
+
+}
